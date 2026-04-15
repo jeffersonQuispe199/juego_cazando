@@ -16,8 +16,11 @@ h1 {
   display: flex;
   justify-content: center;
   gap: 30px;
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 226f852c74f01532cc6172403d3c5516d67c1006
 }
 
 canvas {
