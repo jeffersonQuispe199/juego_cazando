@@ -14,6 +14,8 @@ let tiempo = 10;
 let intervaloTiempo; // Guardará el setInterval para poder detenerlo 
 let juegoActivo = false;
 
+let tiempoMaximo = 10;
+
 // Constantes de tamaño para los personajes 
 const ALTO_GATO = 40;
 const ANCHO_GATO = 60;
@@ -81,8 +83,9 @@ function detectarColision() {
     ) {
         puntos++; // Incrementa puntaje 
         document.getElementById("puntos").innerText = puntos; // Actualiza vista 
-        
-        tiempo =15;
+        // si el primer opjeto atrapa al 2 empieza con 15 
+       tiempoMaximo--;
+       tiempo = tiempoMaximo;
         document.getElementById("tiempo").innerText = tiempo; 
         
         // La comida desaparece y reaparece en otro lugar 
