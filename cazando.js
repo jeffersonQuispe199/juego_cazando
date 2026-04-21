@@ -95,7 +95,7 @@ function detectarColision() {
 
 //  Temporizador 
 function restarTiempo() {
-    tiempo--; // Resta 1 al tiempo actual [cite: 57]
+    tiempo--; // Resta 1 al tiempo actual 
     document.getElementById("tiempo").innerText = tiempo; // Muestra en pantalla 
     
     // Condición de derrota 
@@ -110,7 +110,7 @@ function iniciarJuego() {
     juegoActivo = true;
     actualizarPantalla();
     // Ejecuta restarTiempo cada 1000ms (1 segundo) 
-    intervaloTiempo = setInterval(restarTiempo, 1000); 
+    intervaloTiempo = setInterval(restarTiempo, 15000); 
 }
 
 // Detiene el juego y muestra alertas 
