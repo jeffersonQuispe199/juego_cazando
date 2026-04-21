@@ -82,6 +82,9 @@ function detectarColision() {
         puntos++; // Incrementa puntaje 
         document.getElementById("puntos").innerText = puntos; // Actualiza vista 
         
+        tiempo =15;
+        document.getElementById("tiempo").innerText = tiempo; 
+        
         // La comida desaparece y reaparece en otro lugar 
         comidaX = Math.random() * (canvas.width - ANCHO_COMIDA);
         comidaY = Math.random() * (canvas.height - ALTO_COMIDA);
